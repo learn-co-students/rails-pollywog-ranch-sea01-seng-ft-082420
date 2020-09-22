@@ -2,6 +2,7 @@
   <h1><%= @tadpole.name %> the Tadpole</h1>
 
   <!-- make form to make "Become a frog" button here -->
+  <%= button_to "Become a frog", action: "metamorphose" %>
   <!-- the form should post to /tadpoles/:id/metamorphose -->
 
   <p>Color: <%= @tadpole.color %></p>
@@ -13,6 +14,8 @@
   <a href="/tadpoles/<%= @tadpole.id %>/destroy">Delete</a>
 </div>
 
+
 <div class="card">
   <img src="http://<%= @tadpole.color %>-tadpole.jpg.to/" alt="Tadpole Picture" width="300">
 </div>
+
